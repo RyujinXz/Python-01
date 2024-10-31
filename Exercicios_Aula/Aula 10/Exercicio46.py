@@ -1,13 +1,19 @@
 nomes = []
 idades = []
-masket = []
+junto = []
 contador = 1
 
-for i in range(10):
+for i in range(3):
     nomes.append(input(f"Declare o nome da {contador}° pessoa: "))
     idades.append(int (input(f"Declare a idade de(a) {nomes[i]}: ")))
+    junto.append( 
+        {
+            'Nome': nomes[i],
+            'Idade': idades[i] 
+        })
     contador += 1
-    for subidades in idades:
-        masket.append()
+junto_ordenado = sorted(junto, key=lambda x: x ['Idade'])
+
+print(junto_ordenado[0])
        
         
